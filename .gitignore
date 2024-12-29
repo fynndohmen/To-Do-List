@@ -1,0 +1,16 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# PyCharm project files
+.idea/
+
+# System-specific files
+*.DS_Store
+Thumbs.db
+
+# Optional: Datenbankdatei
+data/database.json
