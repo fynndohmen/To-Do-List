@@ -1,27 +1,14 @@
 todo_app/
 │
-├── main.py               # Der Einstiegspunkt der Anwendung
-├── requirements.txt      # Abhängigkeiten (falls externe Bibliotheken verwendet werden)
-├── README.md             # Beschreibung des Projekts
-├── config.py             # Konfigurationseinstellungen
+├── main.py               # Entry point of the application
+├── requirements.txt      # Dependencies (if external libraries are used)
+├── README.md             # Project description
 │
 ├── app/
-│   ├── __init__.py       # Ermöglicht es, `app` als Paket zu behandeln
-│   ├── views.py          # GUI-Komponenten und Layout
-│   ├── controllers.py    # Steuerlogik (z. B. Event-Handling)
-│   ├── models.py         # Datenmodell für To-Do-Einträge
-│   ├── utils.py          # Hilfsfunktionen
+│   ├── __init__.py       # Allows `app` to be treated as a package
+│   ├── views.py          # GUI components and layout
+│   ├── controllers.py    # Control logic (e.g., event handling)
+│   ├── models.py         # Data model for To-Do entries
 │
 ├── data/
-│   ├── database.json     # Beispiel für eine einfache Speicherung (JSON-Datei)
-│   └── database.db       # Alternative: SQLite-Datenbank
-│
-├── assets/
-│   ├── images/           # Bilder oder Icons für die GUI
-│   ├── styles/           # CSS- oder Style-Konfigurationsdateien
-│
-└── tests/
-    ├── __init__.py       # Ermöglicht `tests` als Paket
-    ├── test_models.py    # Tests für das Datenmodell
-    ├── test_controllers.py  # Tests für die Steuerlogik
-    ├── test_views.py     # Tests für GUI-Komponenten
+│   └── database.json     # Simple storage example (JSON file)

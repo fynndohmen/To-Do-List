@@ -1,136 +1,15 @@
-To-Do List Application
-
-Description
-
-The To-Do List Application is a simple desktop application developed with Python and Tkinter. It allows users to manage tasks by adding, deleting, and marking tasks as completed. The data is stored in a JSON file, ensuring that tasks are restored upon restarting the application.
-
-Features
-
-1. Add Tasks
-
-Users can enter a new task in the input field and click "Add task."
-
-The task will be displayed in the task list.
-
-2. View Tasks
-
-All added tasks are displayed in the list.
-
-Each task shows an ID, the task name, and its status (✔️ for completed, ❌ for not completed).
-
-3. Delete Tasks
-
-Select a task from the list and click "Delete task" to remove it.
-
-4. Mark Tasks as Completed
-
-Select a task from the list and click "Mark as completed" to set its status to completed.
-
-5. Data Persistence
-
-All tasks are stored in the data/database.json file.
-
-Tasks are automatically loaded when the application starts.
-
-Installation
-
-Prerequisites
-
-Python 3.9 or higher must be installed.
-
-Required Python libraries: Tkinter (included in the standard library).
-
-Step-by-Step Guide
-
-Clone the repository or download the code:
-
-git clone <repository-url>
-
-Navigate to the application's directory:
-
-cd To-Do-List
-
-Install dependencies (if necessary):
-
-pip install -r requirements.txt
-
-Run the application:
-
-python main.py
-
-File Structure
-
-To-Do-List/
-├── app/
-│   ├── models.py        # Contains the data logic (CRUD operations)
-│   ├── controllers.py   # Handles data flow between models and views
-│   ├── views.py         # Defines the user interface using Tkinter
-├── data/
-│   └── database.json    # File for storing tasks
-├── main.py              # Entry point of the application
-├── README.md            # Documentation
-└── requirements.txt     # Dependencies (if required)
-
-Usage
-
-1. Starting the Application
-
-Open a terminal or command prompt and run python main.py.
-
-2. Managing Tasks
-
-Add a Task: Enter a task in the input field and click "Add task."
-
-Delete a Task: Select a task from the list and click "Delete task."
-
-Mark a Task as Completed: Select a task from the list and click "Mark as completed."
-
-3. Saving and Loading Tasks
-
-The application automatically saves all tasks to data/database.json.
-
-Tasks are automatically loaded when the application starts.
-
-Technical Details
-
-Data Modeling
-
-models.py:
-
-Contains functions for adding, retrieving, updating, and deleting tasks.
-
-Stores tasks in a global list and persists them in a JSON file.
-
-Controller
-
-controllers.py:
-
-Connects the data logic (models) with the user interface (views).
-
-Includes functions like handle_add_task, handle_show_tasks, and handle_delete_task.
-
-User Interface
-
-views.py:
-
-Creates the GUI using Tkinter.
-
-Defines interactions between user actions (e.g., button clicks) and the controllers.
-
-Future Improvements
-
-Drag-and-Drop: Allow users to rearrange tasks using drag-and-drop.
-
-Filters: Add filters to display tasks by status (completed/not completed).
-
-Reminder Functionality: Notify users about upcoming tasks.
-
-Themes: Enable custom color themes for the GUI.
-
-Authors
-
-Developed by [Your Name/Team Name].
-
-License
-
-This project is licensed under the MIT License. For more information, see the LICENSE file.
+attrs==23.2.1.dev0
+btrfsutil==6.12
+certifi==2024.12.14
+cffi==1.17.1
+cryptography==44.0.0
+filelock==3.16.1
+packaging==24.2
+psutil==6.1.1
+pycparser==2.22
+pygdbmi==0.11.0.0
+sentry-sdk==2.19.2
+smbus==1.1
+TBB==0.2
+urllib3==1.26.20
+wheel==0.45.0
