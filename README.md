@@ -11,20 +11,7 @@ Features:
 
 Project Structure
 
-To-Do-List/
-│
-├── main.py               # Entry point of the application
-├── requirements.txt      # Dependencies for the project
-├── README.md             # Project documentation
-│
-├── app/                  # Application logic and GUI components
-│   ├── __init__.py       # Initializes the app package
-│   ├── views.py          # GUI layout and event handling
-│   ├── controllers.py    # Control logic for managing tasks
-│   ├── models.py         # Data model and storage handling
-│
-└── data/
-    └── database.json     # JSON file for storing tasks persistently
+To-Do-List/ ├── main.py # Entry point of the application ├── requirements.txt # Dependencies for the project ├── README.md # Project documentation ├── app/ # Application logic and GUI components │ ├── init.py # Initializes the app package │ ├── views.py # GUI layout and event handling │ ├── controllers.py # Control logic for managing tasks │ └── models.py # Data model and storage handling └── data/ # JSON file for storing tasks persistently └── database.json
 
 Installation:
 Prerequisites:
